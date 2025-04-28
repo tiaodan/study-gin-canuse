@@ -1,0 +1,15 @@
+# 日志相关
+log:
+  level: debug
+
+# 网络相关
+network:
+  # 喜马拉雅ip,可以是ip,也可以是域名
+  ximalaya_ip: 8.8.8.8
+
+# 数据库相关
+db:
+  name: pdd_order_test
+# gin框架设置, 设置为release 生产模式 分:debug, release(默认), test
+gin:
+  mode: release

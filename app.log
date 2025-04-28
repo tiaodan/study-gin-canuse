@@ -1,0 +1,476 @@
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, website: %v 1 待分类
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, website: %v 2 j88d
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第1条成功, category: 待分类
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第2条成功, category: 普通漫画
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第3条成功, category: 色漫
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第1条成功, country: 待分类
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第2条成功, country: 中国
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第3条成功, country: 韩国
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第4条成功, country: 欧美
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 10:54:52 logger.go:61: 批量创建第5条成功, country: 日本
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 1 0xc0003b5210
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 2 0xc0003b5240
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 3 0xc0003b5270
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 4 0xc0003b52a0
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 5 0xc0003b52d0
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 6 0xc0003b5300
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 10:54:52 logger.go:68: 批量创建第%d条成功, type: %v 7 0xc0003b5330
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第1条成功, website: 待分类
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第2条成功, website: j88d
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第1条成功, category: 待分类
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第2条成功, category: 普通漫画
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第3条成功, category: 色漫
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第1条成功, country: 待分类
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第2条成功, country: 中国
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第3条成功, country: 韩国
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第4条成功, country: 欧美
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第5条成功, country: 日本
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第1条成功, type: 0xc000306310
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第2条成功, type: 0xc000306340
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第3条成功, type: 0xc000306370
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第4条成功, type: 0xc0003063a0
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第5条成功, type: 0xc0003063d0
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第6条成功, type: 0xc000306400
+[DEBUG] 2025/04/28 10:59:44 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 10:59:44 logger.go:61: 批量创建第7条成功, type: 0xc000306430
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第1条成功, website: 待分类
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第2条成功, website: j88d
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第1条成功, category: 待分类
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第2条成功, category: 普通漫画
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第3条成功, category: 色漫
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第1条成功, country: 待分类
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第2条成功, country: 中国
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第3条成功, country: 韩国
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第4条成功, country: 欧美
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第5条成功, country: 日本
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第1条成功, type: 待分类
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第2条成功, type: 韩漫
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第3条成功, type: 日漫
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第4条成功, type: 真人漫画
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第5条成功, type: 3D漫画
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第6条成功, type: 欧美漫画
+[DEBUG] 2025/04/28 11:01:36 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 11:01:36 logger.go:61: 批量创建第7条成功, type: 同性
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 11:03:30 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 11:23:50 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 11:24:34 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 11:24:34 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 11:24:34 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 11:24:34 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 11:24:35 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: db.name:  cartoon
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: gin模式:  release
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 11:28:42 logger.go:68: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: db.name:  cartoon
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: gin模式:  release
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功:  &{0 0 待分类}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功:  &{0 1 中国}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功:  &{0 2 韩国}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功:  &{0 3 欧美}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功:  &{0 4 日本}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 13:18:36 logger.go:70: 创建成功: &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: db.name:  cartoon
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: gin模式:  release
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 单例: 数据库连接成功
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 0 待分类} 1
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 2 色漫} 1
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 0 待分类}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 1 中国}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 2 韩国}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 3 欧美}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 4 日本}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 13:20:38 logger.go:70: 创建成功: &{0 6 同性 1 0}
+[DEBUG] logger.go:72: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] logger.go:72: db.name:  cartoon
+[DEBUG] logger.go:72: gin模式:  release
+[DEBUG] logger.go:72: 单例: 数据库连接成功
+[DEBUG] logger.go:72: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] logger.go:72: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] logger.go:72: 创建成功: &{0 0 待分类} 1
+[DEBUG] logger.go:72: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] logger.go:72: 创建成功: &{0 2 色漫} 1
+[DEBUG] logger.go:72: 创建成功: &{0 0 待分类}
+[DEBUG] logger.go:72: 创建成功: &{0 1 中国}
+[DEBUG] logger.go:72: 创建成功: &{0 2 韩国}
+[DEBUG] logger.go:72: 创建成功: &{0 3 欧美}
+[DEBUG] logger.go:72: 创建成功: &{0 4 日本}
+[DEBUG] logger.go:72: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] logger.go:72: 创建成功: &{0 6 同性 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: db.name:  cartoon
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: gin模式:  release
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 单例: 数据库连接成功
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 0 待分类} 1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 2 色漫} 1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 0 待分类}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 1 中国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 2 韩国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 3 欧美}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 4 日本}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/logger/logger.go:81: 创建成功: &{0 6 同性 1 0}
+[DEBUG] logger.go:81: network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] logger.go:81: db.name:  cartoon
+[DEBUG] logger.go:81: gin模式:  release
+[DEBUG] logger.go:81: 单例: 数据库连接成功
+[DEBUG] logger.go:81: 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] logger.go:81: 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] logger.go:81: 创建成功: &{0 0 待分类} 1
+[DEBUG] logger.go:81: 创建成功: &{0 1 普通漫画} 1
+[DEBUG] logger.go:81: 创建成功: &{0 2 色漫} 1
+[DEBUG] logger.go:81: 创建成功: &{0 0 待分类}
+[DEBUG] logger.go:81: 创建成功: &{0 1 中国}
+[DEBUG] logger.go:81: 创建成功: &{0 2 韩国}
+[DEBUG] logger.go:81: 创建成功: &{0 3 欧美}
+[DEBUG] logger.go:81: 创建成功: &{0 4 日本}
+[DEBUG] logger.go:81: 创建成功: &{0 0 待分类 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 1 韩漫 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 2 日漫 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 3 真人漫画 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 4 3D漫画 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 5 欧美漫画 1 0}
+[DEBUG] logger.go:81: 创建成功: &{0 6 同性 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:38 network.ximalayaIIp_ip: www.ximalaya.com
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:39 db.name: cartoon
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:40 gin模式: release
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/db.go:39 单例: 数据库连接成功
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 创建成功:&{0 0 待分类 未知 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 创建成功:&{0 1 j88d www.j88d.com 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 创建成功:&{0 0 待分类}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 创建成功:&{0 1 普通漫画}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 创建成功:&{0 2 色漫}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 创建成功:&{0 0 待分类}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 创建成功:&{0 1 中国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 创建成功:&{0 2 韩国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 创建成功:&{0 3 欧美}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 创建成功:&{0 4 日本}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 0 待分类 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 1 韩漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 2 日漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 3 真人漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 4 3D漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 5 欧美漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 创建成功:&{0 6 同性 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:38 www.ximalaya.com
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:39 cartoon
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:40 release
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/db.go:39 
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 &{0 0 待分类 未知 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:32 1待分类
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 &{0 1 j88d www.j88d.com 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:32 2j88d
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 0 待分类}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 1待分类
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 1 普通漫画}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 2普通漫画
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 2 色漫}1
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 3色漫
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 0 待分类}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 1待分类
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 1 中国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 2中国
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 2 韩国}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 3韩国
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 3 欧美}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 4欧美
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 4 日本}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 5日本
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 0 待分类 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 1待分类
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 1 韩漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 2韩漫
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 2 日漫 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 3日漫
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 3 真人漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 4真人漫画
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 4 3D漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 53D漫画
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 5 欧美漫画 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 6欧美漫画
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 6 同性 1 0}
+[DEBUG] c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 7同性
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:38 www.ximalaya.com
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:39 cartoon
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/main.go:40 release
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/db.go:39 
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:32 1待分类
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:22 &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/website.go:32 2j88d
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 0 待分类}1
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 1待分类
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 1 普通漫画}1
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 2普通漫画
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:22 &{0 2 色漫}1
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/catefory.go:32 3色漫
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 0 待分类}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 1待分类
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 1 中国}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 2中国
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 2 韩国}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 3韩国
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 3 欧美}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 4欧美
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:22 &{0 4 日本}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/countriy.go:32 5日本
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 1待分类
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 2韩漫
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 3日漫
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 4真人漫画
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 53D漫画
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 6欧美漫画
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:22 &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 13:53:06 c:/A_software/C_wokspace/go/study/study-spider-manhua-gin/db/type.go:32 7同性
+[DEBUG] 2025/04/28 13:56:40 main.go:38 www.ximalaya.com
+[DEBUG] 2025/04/28 13:56:40 main.go:39 cartoon
+[DEBUG] 2025/04/28 13:56:40 main.go:40 release
+[DEBUG] 2025/04/28 13:56:40 db.go:39 
+[DEBUG] 2025/04/28 13:56:40 website.go:22 &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 13:56:40 website.go:32 1待分类
+[DEBUG] 2025/04/28 13:56:40 website.go:22 &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 13:56:40 website.go:32 2j88d
+[DEBUG] 2025/04/28 13:56:40 catefory.go:22 &{0 0 待分类}1
+[DEBUG] 2025/04/28 13:56:40 catefory.go:32 1待分类
+[DEBUG] 2025/04/28 13:56:40 catefory.go:22 &{0 1 普通漫画}1
+[DEBUG] 2025/04/28 13:56:40 catefory.go:32 2普通漫画
+[DEBUG] 2025/04/28 13:56:40 catefory.go:22 &{0 2 色漫}1
+[DEBUG] 2025/04/28 13:56:40 catefory.go:32 3色漫
+[DEBUG] 2025/04/28 13:56:40 countriy.go:22 &{0 0 待分类}
+[DEBUG] 2025/04/28 13:56:40 countriy.go:32 1待分类
+[DEBUG] 2025/04/28 13:56:40 countriy.go:22 &{0 1 中国}
+[DEBUG] 2025/04/28 13:56:40 countriy.go:32 2中国
+[DEBUG] 2025/04/28 13:56:40 countriy.go:22 &{0 2 韩国}
+[DEBUG] 2025/04/28 13:56:40 countriy.go:32 3韩国
+[DEBUG] 2025/04/28 13:56:40 countriy.go:22 &{0 3 欧美}
+[DEBUG] 2025/04/28 13:56:40 countriy.go:32 4欧美
+[DEBUG] 2025/04/28 13:56:40 countriy.go:22 &{0 4 日本}
+[DEBUG] 2025/04/28 13:56:40 countriy.go:32 5日本
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 1待分类
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 2韩漫
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 3日漫
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 4真人漫画
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 53D漫画
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 6欧美漫画
+[DEBUG] 2025/04/28 13:56:40 type.go:22 &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 13:56:40 type.go:32 7同性
+[DEBUG] 2025/04/28 14:00:26 main.go:38 www.ximalaya.com
+[DEBUG] 2025/04/28 14:00:26 main.go:39 cartoon
+[DEBUG] 2025/04/28 14:00:26 main.go:40 release
+[DEBUG] 2025/04/28 14:00:26 db.go:39 
+[DEBUG] 2025/04/28 14:00:26 website.go:22 &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 14:00:26 website.go:32 1待分类
+[DEBUG] 2025/04/28 14:00:26 website.go:22 &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 14:00:26 website.go:32 2j88d
+[DEBUG] 2025/04/28 14:00:26 catefory.go:22 &{0 0 待分类}1
+[DEBUG] 2025/04/28 14:00:26 catefory.go:32 1待分类
+[DEBUG] 2025/04/28 14:00:26 catefory.go:22 &{0 1 普通漫画}1
+[DEBUG] 2025/04/28 14:00:26 catefory.go:32 2普通漫画
+[DEBUG] 2025/04/28 14:00:26 catefory.go:22 &{0 2 色漫}1
+[DEBUG] 2025/04/28 14:00:26 catefory.go:32 3色漫
+[DEBUG] 2025/04/28 14:00:26 countriy.go:22 &{0 0 待分类}
+[DEBUG] 2025/04/28 14:00:26 countriy.go:32 1待分类
+[DEBUG] 2025/04/28 14:00:26 countriy.go:22 &{0 1 中国}
+[DEBUG] 2025/04/28 14:00:26 countriy.go:32 2中国
+[DEBUG] 2025/04/28 14:00:26 countriy.go:22 &{0 2 韩国}
+[DEBUG] 2025/04/28 14:00:26 countriy.go:32 3韩国
+[DEBUG] 2025/04/28 14:00:26 countriy.go:22 &{0 3 欧美}
+[DEBUG] 2025/04/28 14:00:26 countriy.go:32 4欧美
+[DEBUG] 2025/04/28 14:00:26 countriy.go:22 &{0 4 日本}
+[DEBUG] 2025/04/28 14:00:26 countriy.go:32 5日本
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 0 待分类 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 1待分类
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 1 韩漫 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 2韩漫
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 2 日漫 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 3日漫
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 3 真人漫画 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 4真人漫画
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 4 3D漫画 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 53D漫画
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 5 欧美漫画 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 6欧美漫画
+[DEBUG] 2025/04/28 14:00:26 type.go:22 &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 14:00:26 type.go:32 7同性

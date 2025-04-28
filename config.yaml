@@ -1,0 +1,10 @@
+log:
+  level: debug
+network:
+  ximalaya_ip: www.ximalaya.com
+db:
+  name: cartoon
+  user: root
+  password: password
+gin:
+  mode: release
