@@ -80,7 +80,7 @@ func Debug(format string, v ...interface{}) {
 
 // 打印info级别日志, 对应封装log.Printf
 func Info(format string, v ...interface{}) {
-	if logLevel <= LevelDebug {
+	if logLevel <= LevelInfo {
 		// 获取调用者位置
 		_, fullFile, line, _ := runtime.Caller(1)
 		shortFile := path.Base(fullFile) // 截取锻路径
@@ -90,7 +90,7 @@ func Info(format string, v ...interface{}) {
 
 // 打印warn级别日志
 func Warn(format string, v ...interface{}) {
-	if logLevel <= LevelDebug {
+	if logLevel <= LevelWarn {
 		// 获取调用者位置
 		_, fullFile, line, _ := runtime.Caller(1)
 		shortFile := path.Base(fullFile) // 截取锻路径
@@ -100,7 +100,7 @@ func Warn(format string, v ...interface{}) {
 
 // 打印error级别日志
 func Error(format string, v ...interface{}) {
-	if logLevel <= LevelDebug {
+	if logLevel <= LevelError {
 		// 获取调用者位置
 		_, fullFile, line, _ := runtime.Caller(1)
 		shortFile := path.Base(fullFile) // 截取锻路径

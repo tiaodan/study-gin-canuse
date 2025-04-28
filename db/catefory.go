@@ -19,7 +19,7 @@ func CategoryAdd(categoryData *models.Category) error {
 		logger.Error("创建失败:", result.Error)
 		return result.Error
 	} else {
-		logger.Debug("创建成功:", categoryData, "1")
+		logger.Info("创建成功:", categoryData, "1")
 	}
 	return nil
 }
@@ -43,7 +43,7 @@ func CategoryDelete(id uint) {
 	if result.Error != nil {
 		logger.Error("删除失败:", result.Error)
 	} else {
-		logger.Debug("删除成功:", id)
+		logger.Info("删除成功:", id)
 	}
 }
 
@@ -65,7 +65,7 @@ func CategoryUpdate(nameId uint, updates map[string]interface{}) {
 	if result.Error != nil {
 		logger.Error("修改失败:", result.Error)
 	} else {
-		logger.Debug("修改成功:", nameId)
+		logger.Info("修改成功:", nameId)
 	}
 }
 
@@ -90,7 +90,7 @@ func CategoryQueryById(id uint) *models.Category {
 		logger.Error("查询失败:", result.Error)
 		return nil
 	}
-	logger.Debug("查询成功:", categoryData)
+	logger.Info("查询成功:", categoryData)
 	return &categoryData
 }
 
@@ -102,6 +102,6 @@ func CategoriesBatchQuery(ids []uint) ([]*models.Category, error) {
 		logger.Error("批量查询失败: %v", result.Error)
 		return categories, result.Error
 	}
-	logger.Debug("批量查询成功, 查询到 %d 条记录", len(categories))
+	logger.Info("批量查询成功, 查询到 %d 条记录", len(categories))
 	return categories, nil
 }

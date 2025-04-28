@@ -38,7 +38,7 @@ func OrderAdd(order *models.Order) error {
 		logger.Error("创建失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Debug("创建成功: ", order)
+		logger.Info("创建成功: ", order)
 	}
 	return nil
 }
@@ -64,7 +64,7 @@ func OrderDelete(id uint) error {
 		logger.Error("删除失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Debug("删除成功: ", id)
+		logger.Info("删除成功: ", id)
 	}
 	return nil
 }
@@ -98,7 +98,7 @@ func OrderUpdate(orderId string, order *models.Order) error {
 		logger.Error("修改失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Debug("修改成功: ", orderId)
+		logger.Info("修改成功: ", orderId)
 	}
 
 	return nil
@@ -125,7 +125,7 @@ func OrderQueryById(id uint) *models.Order {
 		logger.Error("查询失败: ", result.Error)
 		return nil
 	}
-	logger.Debug("查询成功: ", order)
+	logger.Info("查询成功: ", order)
 	return &order
 }
 
@@ -173,6 +173,6 @@ func OrdersPageQuery(pageNum, pageSize int) ([]*models.Order, error) {
 		logger.Error("分页查询失败: ", result.Error)
 		return orders, result.Error
 	}
-	logger.Debug("分页查询成功, 查询到 %d 条记录", len(orders))
+	logger.Info("分页查询成功, 查询到 %d 条记录", len(orders))
 	return orders, result.Error
 }

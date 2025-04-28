@@ -19,7 +19,7 @@ func TypeAdd(typeData *models.Type) error {
 		logger.Error("创建失败:", result.Error)
 		return result.Error
 	} else {
-		logger.Debug("创建成功:", typeData)
+		logger.Info("创建成功:", typeData)
 	}
 	return nil
 }
@@ -29,7 +29,7 @@ func TypesBatchAdd(types []*models.Type) {
 	for i, typeData := range types {
 		err := TypeAdd(typeData)
 		if err == nil {
-			logger.Debug("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
+			logger.Info("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
 		} else {
 			logger.Error("批量创建第%d条失败, err: %v", i+1, err)
 		}
@@ -43,7 +43,7 @@ func TypeDelete(id uint) {
 	if result.Error != nil {
 		logger.Error("删除失败:", result.Error)
 	} else {
-		logger.Debug("删除成功:", id)
+		logger.Info("删除成功:", id)
 	}
 }
 
@@ -54,7 +54,7 @@ func TypesBatchDelete(ids []uint) {
 	if result.Error != nil {
 		logger.Error("批量删除失败:", result.Error)
 	} else {
-		logger.Debug("批量删除成功:", ids)
+		logger.Info("批量删除成功:", ids)
 	}
 }
 
@@ -65,7 +65,7 @@ func TypeUpdate(nameId uint, updates map[string]interface{}) {
 	if result.Error != nil {
 		logger.Error("修改失败:", result.Error)
 	} else {
-		logger.Debug("修改成功:", nameId)
+		logger.Info("修改成功:", nameId)
 	}
 }
 
@@ -90,7 +90,7 @@ func TypeQueryById(id uint) *models.Type {
 		logger.Error("查询失败:", result.Error)
 		return nil
 	}
-	logger.Debug("查询成功:", typeData)
+	logger.Info("查询成功:", typeData)
 	return &typeData
 }
 
@@ -102,6 +102,6 @@ func TypesBatchQuery(ids []uint) ([]*models.Type, error) {
 		logger.Error("批量查询失败: ", result.Error)
 		return types, result.Error
 	}
-	logger.Debug("批量查询成功, 查询到 %d 条记录", len(types))
+	logger.Info("批量查询成功, 查询到 %d 条记录", len(types))
 	return types, nil
 }
