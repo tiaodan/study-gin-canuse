@@ -584,3 +584,41 @@
 [INFO ] 2025/04/28 15:11:02 type.go:22 &{0 4 3D漫画 1 0}
 [INFO ] 2025/04/28 15:11:02 type.go:22 &{0 5 欧美漫画 1 0}
 [INFO ] 2025/04/28 15:11:02 type.go:22 &{0 6 同性 1 0}
+[DEBUG] 2025/04/28 16:16:47 main.go:38 network.ximalayaIIp_ip:  www.ximalaya.com
+[DEBUG] 2025/04/28 16:16:47 main.go:39 db.name:  cartoon
+[DEBUG] 2025/04/28 16:16:47 main.go:40 gin模式:  release
+[DEBUG] 2025/04/28 16:16:47 db.go:39 单例: 数据库连接成功 
+[INFO ] 2025/04/28 16:16:47 website.go:22 创建成功: &{0 0 待分类 未知 0}
+[DEBUG] 2025/04/28 16:16:47 website.go:32 批量创建第%d条成功, website: %v 1待分类
+[INFO ] 2025/04/28 16:16:47 website.go:22 创建成功: &{0 1 j88d www.j88d.com 0}
+[DEBUG] 2025/04/28 16:16:47 website.go:32 批量创建第%d条成功, website: %v 2j88d
+[INFO ] 2025/04/28 16:16:47 catefory.go:22 创建成功: &{0 0 待分类}1
+[DEBUG] 2025/04/28 16:16:47 catefory.go:32 批量创建第%d条成功, category: %v 1待分类
+[INFO ] 2025/04/28 16:16:47 catefory.go:22 创建成功: &{0 1 普通漫画}1
+[DEBUG] 2025/04/28 16:16:47 catefory.go:32 批量创建第%d条成功, category: %v 2普通漫画
+[INFO ] 2025/04/28 16:16:47 catefory.go:22 创建成功: &{0 2 色漫}1
+[DEBUG] 2025/04/28 16:16:47 catefory.go:32 批量创建第%d条成功, category: %v 3色漫
+[INFO ] 2025/04/28 16:16:47 countriy.go:22 创建成功: &{0 0 待分类}
+[DEBUG] 2025/04/28 16:16:47 countriy.go:32 批量创建第%d条成功, country: %v 1待分类
+[INFO ] 2025/04/28 16:16:47 countriy.go:22 创建成功: &{0 1 中国}
+[DEBUG] 2025/04/28 16:16:47 countriy.go:32 批量创建第%d条成功, country: %v 2中国
+[INFO ] 2025/04/28 16:16:47 countriy.go:22 创建成功: &{0 2 韩国}
+[DEBUG] 2025/04/28 16:16:47 countriy.go:32 批量创建第%d条成功, country: %v 3韩国
+[INFO ] 2025/04/28 16:16:47 countriy.go:22 创建成功: &{0 3 欧美}
+[DEBUG] 2025/04/28 16:16:47 countriy.go:32 批量创建第%d条成功, country: %v 4欧美
+[INFO ] 2025/04/28 16:16:47 countriy.go:22 创建成功: &{0 4 日本}
+[DEBUG] 2025/04/28 16:16:47 countriy.go:32 批量创建第%d条成功, country: %v 5日本
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 0 待分类 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 1待分类
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 1 韩漫 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 2韩漫
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 2 日漫 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 3日漫
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 3 真人漫画 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 4真人漫画
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 4 3D漫画 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 53D漫画
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 5 欧美漫画 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 6欧美漫画
+[INFO ] 2025/04/28 16:16:47 type.go:22 创建成功: &{0 6 同性 1 0}
+[INFO ] 2025/04/28 16:16:47 type.go:32 批量创建第%d条成功, type: %v 7同性
