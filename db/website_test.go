@@ -3,7 +3,7 @@ package db
 import (
 	"os"
 	"study-spider-manhua-gin/errorutil"
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 	"testing"
 
@@ -34,7 +34,7 @@ func TestCreateWebsite(t *testing.T) {
 		Name:   "Test Website",
 		URL:    "http://test.com",
 	}
-	logger.Debug("Creating website...", website)
+	log.Debug("Creating website...", website)
 	WebsiteAdd(website)
 
 	var createdWebsite models.Website

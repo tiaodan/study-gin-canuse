@@ -33,3 +33,20 @@
 
 # v0.0.0.3
 - 解决logger.Debug("xxxxx") 不打印
+
+# v0.0.0.4
+- 自己封装总是有点问题, 改用logrus框架
+- 但是无法控制 输出到控制台(带颜色), 输出到文件(不带颜色)
+- 能用配置文件,控制打印带颜色,还是不带颜色的
+- 打印带占位符%v 就用log.Debugf(); 不带占位符用log.Debug()
+- 日志全用log. 开头打印
+- 用了自定义logrus,就不建议用go 自带的log库了,因为可能会冲突,如果非要打印,用fmt.Println()
+- 试下不用 log.Debugf 有没有问题？？
+
+# v0.0.0.5
+- 修复bug: 打印文件名不对,显示logger.go, untime.Caller(8) 就行了
+
+# 待办
+- 存在问题: 批量添加日志,打印文件名不对,显示logger.go 如:[DEBUG] 2025-04-29 22:39:43 logger.go:59 批量创建第1条成功, website: 待分类  √ untime.Caller(8) 就行 √
+- 修改app.log路径为配置文件
+- 整理配置文件logrus

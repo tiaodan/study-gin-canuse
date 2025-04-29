@@ -4,7 +4,7 @@ package db
 import (
 
 	// 导入 clause 包
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 
 	"gorm.io/gorm/clause"
@@ -35,10 +35,10 @@ func OrderAdd(order *models.Order) error {
 		}),
 	}).Create(order)
 	if result.Error != nil {
-		logger.Error("创建失败: ", result.Error)
+		log.Error("创建失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Info("创建成功: ", order)
+		log.Info("创建成功: ", order)
 	}
 	return nil
 }
@@ -48,23 +48,23 @@ func OrderBatchAdd(orders []*models.Order) {
 	for i, order := range orders {
 		err := OrderAdd(order)
 		if err == nil {
-			logger.Error("批量创建第%d条成功, order: %v", i+1, &order)
+			log.Errorf("批量创建第%d条成功, order: %v", i+1, &order)
 		} else {
-			logger.Debug("批量创建第%d条失败, err: %v", i+1, err)
+			log.Debugf("批量创建第%d条失败, err: %v", i+1, err)
 		}
 	}
 }
 
 // 删
 func OrderDelete(id uint) error {
-	logger.Debug("删除订单, 参数id= ", id)
+	log.Debug("删除订单, 参数id= ", id)
 	var order models.Order
 	result := DB.Delete(&order, id)
 	if result.Error != nil {
-		logger.Error("删除失败: ", result.Error)
+		log.Error("删除失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Info("删除成功: ", id)
+		log.Info("删除成功: ", id)
 	}
 	return nil
 }
@@ -74,9 +74,9 @@ func OrdersBatchDelete(ids []uint) {
 	var orders []models.Order
 	result := DB.Delete(&orders, ids)
 	if result.Error != nil {
-		logger.Error("批量删除失败: ", result.Error)
+		log.Error("批量删除失败: ", result.Error)
 	} else {
-		logger.Debug("批量删除成功: ", ids)
+		log.Debug("批量删除成功: ", ids)
 	}
 }
 
@@ -85,9 +85,9 @@ func OrdersBatchDelete(ids []uint) {
 // 	var order models.Order
 // 	result := DB.Model(&order).Where("pdd_order_id = ?", orderId).Updates(updates)
 // 	if result.Error != nil {
-// 		logger.Error("修改失败:", result.Error)
+// 		log.Error("修改失败:", result.Error)
 // 	} else {
-// 		logger.Debug("修改成功:", orderId)
+// 		log.Debug("修改成功:", orderId)
 // 	}
 // }
 
@@ -95,10 +95,10 @@ func OrdersBatchDelete(ids []uint) {
 func OrderUpdate(orderId string, order *models.Order) error {
 	result := DB.Model(&order).Where("pdd_order_id = ?", orderId).Updates(order)
 	if result.Error != nil {
-		logger.Error("修改失败: ", result.Error)
+		log.Error("修改失败: ", result.Error)
 		return result.Error
 	} else {
-		logger.Info("修改成功: ", orderId)
+		log.Info("修改成功: ", orderId)
 	}
 
 	return nil
@@ -110,9 +110,9 @@ func OrdersBatchUpdate(updates map[uint]map[string]interface{}) {
 		var order models.Order
 		result := DB.Model(&order).Where("order_id = ?", orderId).Updates(update)
 		if result.Error != nil {
-			logger.Error("更新订单 %d 失败: %v", orderId, result.Error)
+			log.Errorf("更新订单 %d 失败: %v", orderId, result.Error)
 		} else {
-			logger.Debug("更新订单 %d 成功", orderId)
+			log.Debugf("更新订单 %d 成功", orderId)
 		}
 	}
 }
@@ -122,10 +122,10 @@ func OrderQueryById(id uint) *models.Order {
 	var order models.Order
 	result := DB.First(&order, id)
 	if result.Error != nil {
-		logger.Error("查询失败: ", result.Error)
+		log.Error("查询失败: ", result.Error)
 		return nil
 	}
-	logger.Info("查询成功: ", order)
+	log.Info("查询成功: ", order)
 	return &order
 }
 
@@ -134,10 +134,10 @@ func OrdersBatchQuery(ids []uint) ([]*models.Order, error) {
 	var orders []*models.Order
 	result := DB.Find(&orders, ids)
 	if result.Error != nil {
-		logger.Error("批量查询失败: ", result.Error)
+		log.Error("批量查询失败: ", result.Error)
 		return orders, result.Error
 	}
-	logger.Debug("批量查询成功, 查询到 %d 条记录", len(orders))
+	log.Debugf("批量查询成功, 查询到 %d 条记录", len(orders))
 	return orders, nil
 }
 
@@ -146,10 +146,10 @@ func OrdersQueryAll() ([]*models.Order, error) {
 	var orders []*models.Order
 	result := DB.Find(&orders)
 	if result.Error != nil {
-		logger.Error("批量查询失败: ", result.Error)
+		log.Error("批量查询失败: ", result.Error)
 		return orders, result.Error
 	}
-	logger.Debug("批量查询成功, 查询到 %d 条记录", len(orders))
+	log.Debugf("批量查询成功, 查询到 %d 条记录", len(orders))
 	return orders, nil
 }
 
@@ -158,10 +158,10 @@ func OrdersTotal() (int64, error) {
 	var count int64
 	result := DB.Model(&models.Order{}).Count(&count)
 	if result.Error != nil {
-		logger.Error("查询数据总数失败: ", result.Error)
+		log.Error("查询数据总数失败: ", result.Error)
 		return 0, result.Error
 	}
-	logger.Info("查询数据总数成功, 总数为 %d", count)
+	log.Infof("查询数据总数成功, 总数为 %d", count)
 	return count, nil
 }
 
@@ -170,9 +170,9 @@ func OrdersPageQuery(pageNum, pageSize int) ([]*models.Order, error) {
 	var orders []*models.Order
 	result := DB.Limit(pageSize).Offset((pageNum - 1) * pageSize).Find(&orders)
 	if result.Error != nil {
-		logger.Error("分页查询失败: ", result.Error)
+		log.Error("分页查询失败: ", result.Error)
 		return orders, result.Error
 	}
-	logger.Info("分页查询成功, 查询到 %d 条记录", len(orders))
+	log.Infof("分页查询成功, 查询到 %d 条记录", len(orders))
 	return orders, result.Error
 }

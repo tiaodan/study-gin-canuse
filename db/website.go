@@ -2,7 +2,7 @@
 package db
 
 import (
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 
 	// 导入 clause 包
@@ -16,10 +16,10 @@ func WebsiteAdd(website *models.Website) error {
 		DoUpdates: clause.Assignments(map[string]interface{}{"name": website.Name, "url": website.URL}),
 	}).Create(website)
 	if result.Error != nil {
-		logger.Error("创建失败:", result.Error)
+		log.Error("创建失败:", result.Error)
 		return result.Error
 	} else {
-		logger.Info("创建成功:", website)
+		log.Info("创建成功:", website)
 	}
 	return nil
 }
@@ -29,9 +29,9 @@ func WebsiteBatchAdd(websites []*models.Website) {
 	for i, website := range websites {
 		err := WebsiteAdd(website)
 		if err == nil {
-			logger.Debug("批量创建第%d条成功, website: %v", i+1, website.Name)
+			log.Debugf("批量创建第%d条成功, website: %v", i+1, website.Name)
 		} else {
-			logger.Error("批量创建第%d条失败, err: %v", i+1, err)
+			log.Errorf("批量创建第%d条失败, err: %v", i+1, err)
 		}
 	}
 }
@@ -41,9 +41,9 @@ func WebsiteDelete(id uint) {
 	var website models.Website
 	result := DB.Delete(&website, id)
 	if result.Error != nil {
-		logger.Error("删除失败:", result.Error)
+		log.Error("删除失败:", result.Error)
 	} else {
-		logger.Info("删除成功:", id)
+		log.Info("删除成功:", id)
 	}
 }
 
@@ -52,9 +52,9 @@ func WebsitesBatchDelete(ids []uint) {
 	var websites []models.Website
 	result := DB.Delete(&websites, ids)
 	if result.Error != nil {
-		logger.Error("批量删除失败:", result.Error)
+		log.Error("批量删除失败:", result.Error)
 	} else {
-		logger.Debug("批量删除成功:", ids)
+		log.Debug("批量删除成功:", ids)
 	}
 }
 
@@ -63,9 +63,9 @@ func WebsiteUpdate(nameId uint, updates map[string]interface{}) {
 	var website models.Website
 	result := DB.Model(&website).Where("name_id = ?", nameId).Updates(updates)
 	if result.Error != nil {
-		logger.Error("修改失败:", result.Error)
+		log.Error("修改失败:", result.Error)
 	} else {
-		logger.Info("修改成功:", nameId)
+		log.Info("修改成功:", nameId)
 	}
 }
 
@@ -75,9 +75,9 @@ func WebsitesBatchUpdate(updates map[uint]map[string]interface{}) {
 		var website models.Website
 		result := DB.Model(&website).Where("name_id = ?", nameId).Updates(update)
 		if result.Error != nil {
-			logger.Error("更新网站 %d 失败: %v", nameId, result.Error)
+			log.Errorf("更新网站 %d 失败: %v", nameId, result.Error)
 		} else {
-			logger.Debug("更新网站 %d 成功", nameId)
+			log.Debugf("更新网站 %d 成功", nameId)
 		}
 	}
 }
@@ -87,10 +87,10 @@ func WebsiteQueryById(id uint) *models.Website {
 	var website models.Website
 	result := DB.First(&website, id)
 	if result.Error != nil {
-		logger.Error("查询失败:", result.Error)
+		log.Error("查询失败:", result.Error)
 		return nil
 	}
-	logger.Info("查询成功:", website)
+	log.Info("查询成功:", website)
 	return &website
 }
 
@@ -99,9 +99,9 @@ func WebsitesBatchQuery(ids []uint) ([]*models.Website, error) {
 	var websites []*models.Website
 	result := DB.Find(&websites, ids)
 	if result.Error != nil {
-		logger.Error("批量查询失败: ", result.Error)
+		log.Error("批量查询失败: ", result.Error)
 		return websites, result.Error
 	}
-	logger.Debug("批量查询成功, 查询到 %d 条记录", len(websites)) // 原logger.Debug无需修改
+	log.Debugf("批量查询成功, 查询到 %d 条记录", len(websites)) // 原 log.Debug无需修改
 	return websites, nil
 }

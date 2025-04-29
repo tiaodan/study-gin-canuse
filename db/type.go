@@ -2,7 +2,7 @@
 package db
 
 import (
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 
 	// 导入 clause 包
@@ -16,10 +16,10 @@ func TypeAdd(typeData *models.Type) error {
 		DoUpdates: clause.Assignments(map[string]interface{}{"name": typeData.Name, "level": typeData.Level, "parent": typeData.Parent}),
 	}).Create(typeData)
 	if result.Error != nil {
-		logger.Error("创建失败:", result.Error)
+		log.Error("创建失败:", result.Error)
 		return result.Error
 	} else {
-		logger.Info("创建成功:", typeData)
+		log.Info("创建成功:", typeData)
 	}
 	return nil
 }
@@ -29,9 +29,9 @@ func TypesBatchAdd(types []*models.Type) {
 	for i, typeData := range types {
 		err := TypeAdd(typeData)
 		if err == nil {
-			logger.Info("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
+			log.Infof("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
 		} else {
-			logger.Error("批量创建第%d条失败, err: %v", i+1, err)
+			log.Errorf("批量创建第%d条失败, err: %v", i+1, err)
 		}
 	}
 }
@@ -41,9 +41,9 @@ func TypeDelete(id uint) {
 	var typeData models.Type
 	result := DB.Delete(&typeData, id)
 	if result.Error != nil {
-		logger.Error("删除失败:", result.Error)
+		log.Error("删除失败:", result.Error)
 	} else {
-		logger.Info("删除成功:", id)
+		log.Info("删除成功:", id)
 	}
 }
 
@@ -52,9 +52,9 @@ func TypesBatchDelete(ids []uint) {
 	var types []models.Type
 	result := DB.Delete(&types, ids)
 	if result.Error != nil {
-		logger.Error("批量删除失败:", result.Error)
+		log.Error("批量删除失败:", result.Error)
 	} else {
-		logger.Info("批量删除成功:", ids)
+		log.Info("批量删除成功:", ids)
 	}
 }
 
@@ -63,9 +63,9 @@ func TypeUpdate(nameId uint, updates map[string]interface{}) {
 	var typeData models.Type
 	result := DB.Model(&typeData).Where("name_id = ?", nameId).Updates(updates)
 	if result.Error != nil {
-		logger.Error("修改失败:", result.Error)
+		log.Error("修改失败:", result.Error)
 	} else {
-		logger.Info("修改成功:", nameId)
+		log.Info("修改成功:", nameId)
 	}
 }
 
@@ -75,9 +75,9 @@ func TypesBatchUpdate(updates map[uint]map[string]interface{}) {
 		var typeData models.Type
 		result := DB.Model(&typeData).Where("name_id = ?", nameId).Updates(update)
 		if result.Error != nil {
-			logger.Error("更新类型 %d 失败: %v", nameId, result.Error)
+			log.Errorf("更新类型 %d 失败: %v", nameId, result.Error)
 		} else {
-			logger.Debug("更新类型 %d 成功", nameId)
+			log.Debugf("更新类型 %d 成功", nameId)
 		}
 	}
 }
@@ -87,10 +87,10 @@ func TypeQueryById(id uint) *models.Type {
 	var typeData models.Type
 	result := DB.First(&typeData, id)
 	if result.Error != nil {
-		logger.Error("查询失败:", result.Error)
+		log.Error("查询失败:", result.Error)
 		return nil
 	}
-	logger.Info("查询成功:", typeData)
+	log.Info("查询成功:", typeData)
 	return &typeData
 }
 
@@ -99,9 +99,9 @@ func TypesBatchQuery(ids []uint) ([]*models.Type, error) {
 	var types []*models.Type
 	result := DB.Find(&types, ids)
 	if result.Error != nil {
-		logger.Error("批量查询失败: ", result.Error)
+		log.Error("批量查询失败: ", result.Error)
 		return types, result.Error
 	}
-	logger.Info("批量查询成功, 查询到 %d 条记录", len(types))
+	log.Infof("批量查询成功, 查询到 %d 条记录", len(types))
 	return types, nil
 }

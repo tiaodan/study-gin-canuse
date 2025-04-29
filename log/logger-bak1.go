@@ -1,6 +1,9 @@
-// 封装go自带log库, 分 debug、info、warn、error级别日志
-package logger
+// 自己封装go自带log库, 分 debug、info、warn、error级别日志
+// package logger  // 原来叫logger,后来改成log了
+package log
 
+// ----------------------------------------- v0.0.0.4 start
+/*
 import (
 	"fmt"
 	"io"
@@ -47,14 +50,11 @@ func init() {
 	multiWarn := io.MultiWriter(os.Stdout, logFile)
 	multiError := io.MultiWriter(os.Stdout, logFile)
 
-	/*
-		// 打印文件位置是logger.go 非源文件位置
-		debugLogger = log.New(multiDebug, "[DEBUG] ", log.Ldate|log.Ltime|log.Lshortfile)
-		infoLogger = log.New(multiInfo, "[INFO ] ", log.Ldate|log.Ltime|log.Lshortfile)
-		warnLogger = log.New(multiWarn, "[WARN ] ", log.Ldate|log.Ltime|log.Lshortfile)
-		errorLogger = log.New(multiError, "[ERROR] ", log.Ldate|log.Ltime|log.Lshortfile)
-
-	*/
+	// 打印文件位置是logger.go 非源文件位置,原来的写法，弃用
+	// debugLogger = log.New(multiDebug, "[DEBUG] ", log.Ldate|log.Ltime|log.Lshortfile)
+	// infoLogger = log.New(multiInfo, "[INFO ] ", log.Ldate|log.Ltime|log.Lshortfile)
+	// warnLogger = log.New(multiWarn, "[WARN ] ", log.Ldate|log.Ltime|log.Lshortfile)
+	// errorLogger = log.New(multiError, "[ERROR] ", log.Ldate|log.Ltime|log.Lshortfile)
 
 	// 打印文件位置是 源文件位置。如: [DEBUG] main.go:72: xx
 	debugLogger = log.New(multiDebug, "[DEBUG] ", log.Ldate|log.Ltime)
@@ -107,6 +107,8 @@ func Error(format string, v ...interface{}) {
 		errorLogger.Printf("%s:%d %s %s", shortFile, line, format, fmt.Sprint(v...))
 	}
 }
+*/
+// ----------------------------------------- v0.0.0.4 end
 
 // ----------------------------------------- 只能通过Debugf() 和Debug()2个函数实现 start
 /*

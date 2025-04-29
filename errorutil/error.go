@@ -2,7 +2,7 @@
 package errorutil
 
 import (
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 )
 
 // 封装panic 的错误处理
@@ -35,7 +35,7 @@ func ErrorPrint(err error, msg string) int {
 	errorCode := 1
 	if err != nil {
 		errorCode = 0
-		logger.Error(msg + ": " + err.Error())
+		log.Error(msg + ": " + err.Error())
 	}
 	return errorCode
 }

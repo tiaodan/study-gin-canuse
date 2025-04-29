@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"study-spider-manhua-gin/db"
 	"study-spider-manhua-gin/errorutil"
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 
 	"github.com/gin-gonic/gin"
@@ -13,16 +13,16 @@ import (
 
 // 增
 func OrderAdd(c *gin.Context) {
-	logger.Debug("增加订单")
+	log.Debug("增加订单")
 	var order models.Order
 	if err := c.ShouldBindJSON(&order); err != nil {
-		logger.Error("解析请求体失败, err: ", err)
+		log.Error("解析请求体失败, err: ", err)
 		c.JSON(400, gin.H{"error": err.Error()})
 		return // 必须保留 return，确保绑定失败时提前退出
 	}
 	err := db.OrderAdd(&order)
 	if err != nil {
-		logger.Error("增加订单失败, err: ", err)
+		log.Error("增加订单失败, err: ", err)
 		c.JSON(500, gin.H{"error": err.Error()})
 		return
 	}
@@ -33,10 +33,10 @@ func OrderAdd(c *gin.Context) {
 func OrderDelete(c *gin.Context) {
 	// 提取前端传递的 id 参数
 	idStr := c.Param("id")
-	logger.Debug("删除订单, 参数= ", idStr)
+	log.Debug("删除订单, 参数= ", idStr)
 	id, err := strconv.ParseUint(idStr, 10, 64) // 转换为 ​十进制 64 位无符号整数
 	if err != nil {
-		logger.Error("删除订单, 参数错误")
+		log.Error("删除订单, 参数错误")
 		c.JSON(400, gin.H{"error": "删除订单, 参数错误"})
 		return
 	}
@@ -45,7 +45,7 @@ func OrderDelete(c *gin.Context) {
 	err = db.OrderDelete(uint(id))
 	// err := db.OrderDelete(1)
 	if err != nil {
-		logger.Error("删除订单失败, err: ", err)
+		log.Error("删除订单失败, err: ", err)
 		c.JSON(500, gin.H{"error": err.Error()})
 		return
 	}
@@ -54,18 +54,18 @@ func OrderDelete(c *gin.Context) {
 
 // 改
 func OrderUpdate(c *gin.Context) {
-	logger.Debug("修改订单")
+	log.Debug("修改订单")
 	// 绑定前端数据
 	var order models.Order
 	if err := c.ShouldBindJSON(&order); err != nil {
-		logger.Error("解析请求体失败, err: ", err)
+		log.Error("解析请求体失败, err: ", err)
 		c.JSON(400, gin.H{"error": err.Error()})
 		return // 必须保留 return，确保绑定失败时提前退出
 	}
 	err := db.OrderUpdate(order.PddOrderId, &order)
 
 	if err != nil {
-		logger.Error("修改订单失败, err: ", err)
+		log.Error("修改订单失败, err: ", err)
 		c.JSON(500, gin.H{"error": err.Error()})
 		return
 	}
@@ -81,7 +81,7 @@ func OrderUpdate(c *gin.Context) {
 }
 */
 func OrdersQuery(c *gin.Context) {
-	logger.Debug("查询所有订单")
+	log.Debug("查询所有订单")
 	total, err := db.OrdersTotal() // 补充总数获取
 	errorutil.ErrorPrint(err, "查询订单总数失败")
 	orders, _ := db.OrdersQueryAll()
@@ -107,12 +107,12 @@ func OrdersQuery(c *gin.Context) {
 4. 业务逻辑
 */
 func OrdersPageQuery(c *gin.Context) {
-	logger.Debug("分页查询订单")
+	log.Debug("分页查询订单")
 
 	// 强校验参数类型
 	pageStr := c.DefaultQuery("page", "") // 之前写法默认为 1, pageStr := c.DefaultQuery("page", "1")
 	sizeStr := c.DefaultQuery("size", "") // 之前写法默认为 10 ,所以不存在类型不是string类型, sizeStr := c.DefaultQuery("size", "10")
-	logger.Debug("前端传参, page=%v, size=%v", pageStr, sizeStr)
+	log.Debug("前端传参, page=%v, size=%v", pageStr, sizeStr)
 
 	// 参数缺失校验
 	if pageStr == "" || sizeStr == "" {

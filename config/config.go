@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"study-spider-manhua-gin/logger"
 	"sync"
 
 	"github.com/mitchellh/mapstructure"
@@ -157,6 +156,6 @@ func WriteConfig2Blank(path, name, ext string) error {
 		panic(fmt.Sprintf("YAML 编码失败: %v", err))
 	}
 
-	logger.Debug("配置文件已生成（缩进 2 空格）")
+	fmt.Println("配置文件已生成（缩进 2 空格）")
 	return err
 }

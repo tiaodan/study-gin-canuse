@@ -1,7 +1,7 @@
 package db
 
 import (
-	"study-spider-manhua-gin/logger"
+	"study-spider-manhua-gin/log"
 	"study-spider-manhua-gin/models"
 	"sync"
 
@@ -33,10 +33,10 @@ func InitDB(dbType, dbName, dbUser, dbPass string) {
 		// DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 		DB, err = gorm.Open(dbOpen, &gorm.Config{})
 		if err != nil {
-			logger.Error("单例: 数据库连接失败, 是不是数据库名+密码没配对？ 数据库没创建？ err= ", err)
+			log.Error("单例: 数据库连接失败, 是不是数据库名+密码没配对？ 数据库没创建？ err= ", err)
 			panic(err)
 		}
-		logger.Debug("单例: 数据库连接成功")
+		log.Debug("单例: 数据库连接成功")
 	})
 }
 

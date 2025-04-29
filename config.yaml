@@ -3,8 +3,10 @@ log:
 network:
   ximalaya_ip: www.ximalaya.com
 db:
-  name: cartoon
+  name: comic
   user: root
   password: password
 gin:
   mode: release
+logrus:
+  
