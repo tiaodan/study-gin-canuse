@@ -40,7 +40,7 @@ func init() {
 	}
 
 	// 创建一个文件用于写入日志
-	file, err := os.OpenFile("app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, err := os.OpenFile(cfg.Log.Path, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666) // os.OpenFile("app.log"
 	if err != nil {
 		log.Printf("Failed to open log file: %v", err)
 	}
@@ -51,10 +51,17 @@ func init() {
 	log.SetOutput(multiWriter)
 
 	// 打印配置
+	log.Debug("[log] 相关")
+	log.Debug("log.level: ", cfg.Log.Level)
+	log.Debug("log.path: ", cfg.Log.Path)
+	log.Debug("[network] 相关---")
 	log.Debug("network.ximalayaIIp_ip: ", cfg.Network.XimalayaIIp)
+	log.Debug("[db] 相关")
 	log.Debug("db.name: ", cfg.DB.Name)
-	log.Debug("gin模式: ", cfg.Gin.Mode)
-	log.Println("------------ gin模式: ", cfg.Gin.Mode)
+	log.Debug("db.user: ", cfg.DB.User)
+	log.Debug("db.password: ", cfg.DB.Password)
+	log.Debug("[gin] 相关")
+	log.Debug("gin.mode: ", cfg.Gin.Mode)
 
 	// 初始化数据库连接
 	db.InitDB("mysql", cfg.DB.Name, cfg.DB.User, cfg.DB.Password)

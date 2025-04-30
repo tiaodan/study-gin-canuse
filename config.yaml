@@ -1,5 +1,6 @@
 log:
   level: debug
+  path: app.log
 network:
   ximalaya_ip: www.ximalaya.com
 db:
@@ -8,5 +9,3 @@ db:
   password: password
 gin:
   mode: release
-logrus:
-  log_path: app.log

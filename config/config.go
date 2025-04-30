@@ -18,6 +18,7 @@ type Config struct {
 	}
 	Log struct {
 		Level string `mapstructure:"level"`
+		Path  string `mapstructure:"path"`
 	}
 	DB struct {
 		Name     string `mapstructure:"name"`
@@ -81,7 +82,8 @@ func GetConfig(path, name, ext string) *Config {
 		viper.SetDefault("network.ximalaya_ip", "www.ximalaya.com")
 
 		// 设置默认值 [log] 相关
-		viper.SetDefault("log.level", "info") // 设置默认info级别
+		viper.SetDefault("log.level", "info")   // 设置默认info级别
+		viper.SetDefault("log.path", "app.log") // 默认日志文件名
 
 		// 设置默认值 [gin] 相关
 		viper.SetDefault("gin.mode", "release") // 设置默认release模式
