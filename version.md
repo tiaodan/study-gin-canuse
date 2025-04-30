@@ -52,6 +52,9 @@
 # v0.0.0.7
 - 修改app.log路径为配置文件
 
+# v0.0.0.8
+- fix-bug: 把db.catefory名称 -> db.category
+
 # 待办
 - 存在问题: 批量添加日志,打印文件名不对,显示logger.go 如:[DEBUG] 2025-04-29 22:39:43 logger.go:59 批量创建第1条成功, website: 待分类  √ untime.Caller(8) 就行 √
 - 修改app.log路径为配置文件 √
