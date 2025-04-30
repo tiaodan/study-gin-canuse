@@ -29,7 +29,7 @@ func TypesBatchAdd(types []*models.Type) {
 	for i, typeData := range types {
 		err := TypeAdd(typeData)
 		if err == nil {
-			log.Infof("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
+			log.Debugf("批量创建第%d条成功, type: %v", i+1, typeData.Name) // 之前填的&typeData
 		} else {
 			log.Errorf("批量创建第%d条失败, err: %v", i+1, err)
 		}
