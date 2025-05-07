@@ -93,7 +93,11 @@ func OrdersBatchDelete(ids []uint) {
 
 // 改 - 参数用结构体
 func OrderUpdate(orderId string, order *models.Order) error {
-	result := DB.Model(&order).Where("pdd_order_id = ?", orderId).Updates(order)
+	result := DB.Model(&order).Where("pdd_order_id = ?", orderId).Select("pdd_order_time",
+		"pdd_order_price", "pdd_product_type", "pdd_product_color", "pdd_order_status", "pdd_buyer_info",
+		"pdd_express_company", "pdd_express_id", "pdd_is_black_list", "pdd_remark",
+		"drop_shipping_platform", "drop_shipping_order_id", "drop_shipping_order_time", "drop_shipping_factory_name",
+		"drop_shipping_real_price", "drop_shipping_price", "drop_shipping_discount_price", "drop_shipping_remark").Updates(order)
 	if result.Error != nil {
 		log.Error("修改失败: ", result.Error)
 		return result.Error
@@ -108,7 +112,11 @@ func OrderUpdate(orderId string, order *models.Order) error {
 func OrdersBatchUpdate(updates map[uint]map[string]interface{}) {
 	for orderId, update := range updates {
 		var order models.Order
-		result := DB.Model(&order).Where("order_id = ?", orderId).Updates(update)
+		result := DB.Model(&order).Where("pdd_order_id = ?", orderId).Select("pdd_order_time",
+			"pdd_order_price", "pdd_product_type", "pdd_product_color", "pdd_order_status", "pdd_buyer_info",
+			"pdd_express_company", "pdd_express_id", "pdd_is_black_list", "pdd_remark",
+			"drop_shipping_platform", "drop_shipping_order_id", "drop_shipping_order_time", "drop_shipping_factory_name",
+			"drop_shipping_real_price", "drop_shipping_price", "drop_shipping_discount_price", "drop_shipping_remark").Updates(update)
 		if result.Error != nil {
 			log.Errorf("更新订单 %d 失败: %v", orderId, result.Error)
 		} else {
